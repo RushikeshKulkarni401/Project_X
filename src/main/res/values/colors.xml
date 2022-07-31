@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00E5FF</color>
+    <color name="colorPrimaryDark">#00E5FF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--    background_colors-->
+    <color name="background_red">#FF0000</color>
+    <color name="background_yellow">#FFFF00</color>
+    <color name="background_green">#00FF00</color>
+
+    <!--    action_bar_colors-->
+    <color name="action_bar_red">#8B0000</color>
+    <color name="action_bar_yellow">#CCCC00</color>
+    <color name="action_bar_green">#32CD32</color>
+
+    <!--    status_bar_colors-->
+
+    <color name="status_bar_red">#800000</color>
+    <color name="status_bar_yellow">#666600</color>
+    <color name="status_bar_green">#228B22</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="logo_background">#070618</color>
+
+</resources>

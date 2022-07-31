@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/infoImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startButton"
+        app:srcCompat="@drawable/information" />
+
+    <ImageView
+        android:id="@+id/clockImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeEditText"
+        app:srcCompat="@drawable/clock" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:ems="10"
+        android:hint="15:20:47"
+        android:inputType="time"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/clockImageView"
+        app:layout_constraintStart_toEndOf="@+id/timeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dateEditText" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:ems="10"
+        android:hint="30/01/2021"
+        android:inputType="date"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/calendarImageView"
+        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/projectLogo" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:alpha="0"
+        android:background="#5f939a"
+        android:onClick="showDialogueAlert"
+        android:paddingHorizontal="8dp"
+        android:text="Start!"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeEditText" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0"
+        android:text="Date -"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dateEditText" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0"
+        android:text="Time -"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeEditText" />
+
+    <TextView
+        android:id="@+id/projectLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:fontFamily="@font/bungee_shade"
+        android:text="PROJECT X"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/calendarImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dateEditText"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="368dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:inputType="textLongMessage|textMultiLine"
+        android:lineSpacingExtra="2sp"
+        android:text="INFO:\n\n1.  This is app will help you to keep track of 21 days to install / Uninstall a habbit\n\n2. We focus only one habbit for 21 days and there is no way to RESET once started, You'll have to do it\n\n3. Long click on 'i' to know more\n\n4. ALL THE BEST!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
