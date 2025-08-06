@@ -48,8 +48,12 @@ People often struggle to objectively reflect on their moods and activities throu
 
 ### 📸 Screenshots
 <img width="394" height="709" alt="image" src="https://github.com/user-attachments/assets/cdc32165-6d73-41f7-abc5-8b8a45473d0c" />
+
 <img width="406" height="712" alt="image" src="https://github.com/user-attachments/assets/81926606-ea6c-4800-9551-84318a1939c1" />
+
+- ***Settings Activity*** - 
 <img width="397" height="783" alt="image" src="https://github.com/user-attachments/assets/ea16afcd-58cb-48c5-aa21-c7bdfca3e14a" />
+
 
 ---
 
